@@ -11,11 +11,10 @@
     <div class="container">
       <aside class="sidebar">
         <header>
-          <img class="sidebar__photo" src="" alt="Artem photo" />
-          <h2 class="sidebar__title">Personal data</h2>
+          <img class="sidebar__photo" src="images/avatar.jpg" alt="Artem photo" />
+          <h2 class="sidebar__title">Contacts</h2>
         </header>
         <section class="information">
-          <header class="information__title">Contacts</header>
           <ul class="information__section">
             <li class="information__type" type="text">E-mail :</li>
             <li class="information__data" type="email">dino.olimp@mail.ru</li>
@@ -52,52 +51,68 @@
           <h1 class="header__titlte">Stepanov Artem Sergeevich</h1>
         </header>
         <div class="aboutme">
-          <h3 class="aboutme__title">About me</h3>
-          <p class="aboutme__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            doloremque dignissimos, iste possimus, at earum, id sunt quisquam
-            amet repudiandae nostrum inventore sapiente quibusdam dolorum
-            explicabo labore excepturi. Ea, exercitationem!
-          </p>
-        </div>
-        <div class="aboutMySkills">
-          <h4 class="aboutMySkills__title">About me</h4>
-          <p class="aboutMySkills__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            doloremque dignissimos, iste possimus, at earum, id sunt quisquam
-            amet repudiandae nostrum inventore sapiente quibusdam dolorum
-            explicabo labore excepturi. Ea, exercitationem!
+          <h3 class="main__title">About me</h3>
+          <p class="main__text">
+            I am 23 years old, in January 2021 I decided to change jobs and started learning
+            programming, first I studied Html, css, then java script according
+            to the Learn js tutorial.
           </p>
         </div>
         <div class="skills">
-          <h4 class="skills__title">About me</h4>
-          <p class="skills__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            doloremque dignissimos, iste possimus, at earum, id sunt quisquam
-            amet repudiandae nostrum inventore sapiente quibusdam dolorum
-            explicabo labore excepturi. Ea, exercitationem!
-          </p>
+          <h4 class="main__title">My skills</h4>
+          <ul>
+            <li class="skill">HTML5</li>
+            <li class="skill">CSS3</li>
+            <li class="skill">Java script</li>
+            <li class="skill">Git</li>
+            <li class="skill">Vue.js</li>
+            <li class="skill">Photoshop</li>
+          </ul>
         </div>
         <div class="education">
-          <h4 class="education__title">About me</h4>
-          <p class="education__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            doloremque dignissimos, iste possimus, at earum, id sunt quisquam
-            amet repudiandae nostrum inventore sapiente quibusdam dolorum
-            explicabo labore excepturi. Ea, exercitationem!
+          <h4 class="main__title">Education</h4>
+          <p class="main__text">
+            In 2021 he graduated from the SamGUPS Institute, Faculty of Main
+            Transport.
           </p>
         </div>
         <div class="code">
-          <h4 class="code__title">About me</h4>
-          <p class="code__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            doloremque dignissimos, iste possimus, at earum, id sunt quisquam
-            amet repudiandae nostrum inventore sapiente quibusdam dolorum
-            explicabo labore excepturi. Ea, exercitationem!
-          </p>
+          <h4 class="main__title">My code</h4>
+          <div class="code__wrapper">
+            <code class="code__text">
+function runLengthEncoding(str) {
+  let result = [];
+  let arr = str.split('');
+         
+  for (let i = 0, count = 0, y = 0; i < arr.length; y++, i++) {
+
+    for (let k = 0; k < arr.length; k++) {
+      if (arr[i] === arr[i + k]) {
+        count++;
+      } else {
+         break;
+      }
+
+    }
+    result[y] = [];
+    result[y].push(count, arr[i]);
+    i += count - 1;
+    count = 0;
+  }
+  return result;
+};
+            </code>
+          </div>
         </div>
       </main>
-      <footer class="footer"></footer>
     </div>
+
+    <footer class="footer">
+      <a target="_blank" href="https://github.com/dino19981">
+        <img src="images/GitHub-Mark-64px.png" width="50px" alt="Link on my Github"></a>
+      <a target="_blank" href="https://rs.school/">
+        <img src="images/rs_school_js.svg" width="100px" alt="Link on RS school"></a>
+    </footer>
+  </div>
   </body>
 </html>
