@@ -10,14 +10,18 @@
   <body>
     <div class="container">
       <aside class="sidebar">
-        <header>
-          <img class="sidebar__photo" src="images/avatar.jpg" alt="Artem photo" />
+        <header class="sidebar__header">
+          <img
+            class="sidebar__photo"
+            src="images/avatar.jpg"
+            alt="Artem photo"
+          />
           <h2 class="sidebar__title">Contacts</h2>
         </header>
-        <section class="information">
+        <div class="information">
           <ul class="information__section">
-            <li class="information__type" type="text">E-mail :</li>
-            <li class="information__data" type="email">dino.olimp@mail.ru</li>
+            <li class="information__type">E-mail :</li>
+            <li class="information__data">dino.olimp@mail.ru</li>
           </ul>
           <ul class="information__section">
             <li class="information__type">Discord :</li>
@@ -33,7 +37,7 @@
           </ul>
 
           <ul class="information__section">
-            <li class="information__type">Github</li>
+            <li class="information__type">Github :</li>
             <li class="information__data">
               <a
                 class="link"
@@ -43,7 +47,7 @@
               >
             </li>
           </ul>
-        </section>
+        </div>
       </aside>
 
       <main class="main">
@@ -53,9 +57,9 @@
         <div class="aboutme">
           <h3 class="main__title">About me</h3>
           <p class="main__text">
-            I am 23 years old, in January 2021 I decided to change jobs and started learning
-            programming, first I studied Html, css, then java script according
-            to the Learn js tutorial.
+            I am 23 years old, in January 2021 I decided to change jobs and
+            started learning programming, first I studied Html, css, then java
+            script according to the Learn js tutorial.
           </p>
         </div>
         <div class="skills">
@@ -64,9 +68,10 @@
             <li class="skill">HTML5</li>
             <li class="skill">CSS3</li>
             <li class="skill">Java script</li>
-            <li class="skill">Git</li>
+            <li class="skill" >Git</li>
             <li class="skill">Vue.js</li>
             <li class="skill">Photoshop</li>
+            <li class="skill">English (B2)</li>
           </ul>
         </div>
         <div class="education">
@@ -79,28 +84,13 @@
         <div class="code">
           <h4 class="main__title">My code</h4>
           <div class="code__wrapper">
-            <code class="code__text">
-function runLengthEncoding(str) {
-  let result = [];
-  let arr = str.split('');
-         
-  for (let i = 0, count = 0, y = 0; i < arr.length; y++, i++) {
-
-    for (let k = 0; k < arr.length; k++) {
-      if (arr[i] === arr[i + k]) {
-        count++;
-      } else {
-         break;
-      }
-
-    }
-    result[y] = [];
-    result[y].push(count, arr[i]);
-    i += count - 1;
-    count = 0;
-  }
-  return result;
-};
+            <code class="code__text">function absentVowel(x){
+ let arr = ['a', 'e', 'i', 'o', 'u'] 
+  for (let i = 0; i &lt; arr.length; i++) {
+   if (!x.includes(arr[i])) {
+    return i; } 
+  } 
+}
             </code>
           </div>
         </div>
@@ -109,10 +99,15 @@ function runLengthEncoding(str) {
 
     <footer class="footer">
       <a target="_blank" href="https://github.com/dino19981">
-        <img src="images/GitHub-Mark-64px.png" width="50px" alt="Link on my Github"></a>
-      <a target="_blank" href="https://rs.school/">
-        <img src="images/rs_school_js.svg" width="100px" alt="Link on RS school"></a>
+        <img
+          src="images/GitHub-Mark-64px.png"
+          width="50"
+          alt="Link on my Github"
+      /></a>
+      <p class="footer__year">2021</p>
+      <a target="_blank" href="https://rs.school/js/">
+        <img src="images/rs_school_js.svg" width="100" alt="Link on RS school"
+      /></a>
     </footer>
-  </div>
   </body>
 </html>
